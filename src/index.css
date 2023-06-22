@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Nunito+Sans:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Nunito Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-blue: black;
+  --primary-purple: red;
+}
+
+@layer base {
+  button {
+    @apply bg-gradient-to-r from-[var(--primary-purple)] to-[var(--primary-blue)] py-3 px-5 ml-3 rounded-3xl;
+  }
+}
